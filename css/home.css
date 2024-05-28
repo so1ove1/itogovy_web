@@ -4,7 +4,6 @@
     margin-right: 20px;
     margin-left: 20px;
     padding: 10px;
-    background: #33cccc;
     color: rgb(25, 25, 25);
 }
 
@@ -29,67 +28,46 @@
     margin-left: 3%;
 }
 
-.slider-container {
-    position: relative;
-    width: 600px;
-    height: 400px;
-    margin: 0 auto;
-    overflow: hidden;
-    margin-top: 10px;
-}
-
-.slider {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slider img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.prev-button,
-.next-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
-    background-color: transparent;
-    border: none;
-    font-size: 24px;
-    color: white;
-}
-
-.prev-button {
-    left: 10px;
-}
-
-.next-button {
-    right: 10px;
-}
-
-
-@media screen and (max-width: 725px) {
-    .slider-container {
-        width: 100%;
-        height: auto;
-        padding-bottom: 66.67%;
-        position: relative;
+@media (max-width: 768px) {
+    .container {
+        margin-right: 10px;
+        margin-left: 10px;
+        padding: 5px;
     }
 
-    .slider {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+    .welcome {
+        font-size: 24pt;
+        padding: 5px 0;
     }
 
-    .slider img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+    .target {
+        font-size: 14pt;
+    }
+
+    .task {
+        font-size: 12pt;
+        margin-left: 2%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .container {
+        margin-right: 15px;
+        margin-left: 15px;
+        padding: 8px;
+    }
+
+    .welcome {
+        font-size: 26pt;
+        padding: 8px 0;
+    }
+
+    .target {
+        font-size: 16pt;
+    }
+
+    .task {
+        font-size: 14pt;
+        margin-left: 2.5%;
     }
 }
