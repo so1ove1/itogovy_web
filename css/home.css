@@ -20,12 +20,52 @@
 
 .txt {
     text-align: center;
+    background-color: #333;
+    color: #fff
 }
 
 .task {
     flex: 0 0 100%;
     font-size: 16pt;
     margin-left: 3%;
+}
+
+.btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.block {
+    width: 400px;
+    height: 200px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.block img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.block:hover {
+    transform: translateY(-10px);
 }
 
 @media (max-width: 768px) {
@@ -48,6 +88,11 @@
         font-size: 12pt;
         margin-left: 2%;
     }
+
+    .block {
+        width: 300px;
+        height: 150px;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
@@ -69,5 +114,15 @@
     .task {
         font-size: 14pt;
         margin-left: 2.5%;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .block {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
     }
 }
