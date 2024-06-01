@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <script src="/js/script.js"></script>
+    <title>Примеры шрифтов</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <a href="/home.html" class="logo">Basics Design</a>
+
+            <div class="bar">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+
+            <div class="nav__link hide">
+                <a href="/lessons/lesson-main.html">обучение</a>
+                <a href="/portfolio.html">портфолио</a>
+                <a href="/src.html">ресурсы</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Генератор текста с выбором шрифта Google Fonts</h1>
+        <form>
+            <label for="text">Текст:</label>
+            <input type="text" id="text" value="Пример текста">
+
+            <label for="font-family">Семейство шрифтов:</label>
+            <select id="font-family">
+                <option value="" disabled selected>Выберите шрифт</option>
+            </select>
+
+            <label for="font-style">Начертание:</label>
+            <select id="font-style">
+                <option value="" disabled selected>Выберите начертание</option>
+            </select>
+
+            <input type="submit" value="Применить">
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="/js/fonts.js"></script>
+</body>
+
+</html>

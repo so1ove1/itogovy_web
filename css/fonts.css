@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+input[type="text"],
+input[type="submit"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+input[type="text"] {
+    width: 85%;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#result p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#textOutput {
+    font-size: 26px !important;
+}
+
+#result a {
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+#result a:hover {
+    color: #007bff
+}
+
+select {
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+    margin: 10px;
+}
+
+select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+select option {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="submit"] {
+        padding: 8px;
+    }
+
+    #result {
+        padding: 10px;
+    }
+
+    #result p {
+        font-size: 16px;
+    }
+
+    #textOutput {
+        font-size: 22px !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 80%;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    input[type="text"],
+    input[type="submit"] {
+        padding: 10px;
+    }
+
+    #result {
+        padding: 15px;
+    }
+
+    #result p {
+        font-size: 17px;
+    }
+
+    #textOutput {
+        font-size: 24px !important;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 70%;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    label {
+        font-size: 17px;
+    }
+
+    input[type="text"],
+    input[type="submit"] {
+        padding: 12px;
+    }
+
+    #result {
+        padding: 20px;
+    }
+
+    #result p {
+        font-size: 19px;
+    }
+
+    #textOutput {
+        font-size: 28px !important;
+    }
+}

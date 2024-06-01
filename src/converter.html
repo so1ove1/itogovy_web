@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/converter.css">
+    <script src="../js/script.js"></script>
+    <script src="../js/converter.js"></script>
+    <title>Ресурсы</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <a href="../home.html" class="logo">Basics Design</a>
+
+            <div class="bar">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+
+            <div class="nav__link hide">
+                <a href="/lessons/lesson-main.html">обучение</a>
+                <a href="/portfolio.html">портфолио</a>
+                <a href="/src.html">ресурсы</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="header">
+        Конвертер единиц типографики и обработки изображений
+    </div>
+
+    <div class="container">
+        <form id="converter-form">
+            <label for="value">Значение:</label>
+            <input type="number" id="value" name="value" autofocus>
+            <br>
+            <label for="from-unit">Из:</label>
+            <select id="from-unit" name="from-unit">
+                <option value="px">Пиксели (px)</option>
+                <option value="cm">Сантиметры (cm)</option>
+                <option value="mm">Миллиметры (mm)</option>
+                <option value="in">Дюймы (in)</option>
+                <option value="pt">Пункты (pt)</option>
+            </select>
+            <br>
+            <label for="to-unit">В:</label>
+            <select id="to-unit" name="to-unit">
+                <option value="px">Пиксели (px)</option>
+                <option value="cm">Сантиметры (cm)</option>
+                <option value="mm">Миллиметры (mm)</option>
+                <option value="in">Дюймы (in)</option>
+                <option value="pt">Пункты (pt)</option>
+            </select>
+            <br>
+            <button type="submit">Конвертировать</button>
+        </form>
+    </div>
+
+    <div id="result"></div>
+
+</body>
+
+</html>
