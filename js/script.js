@@ -5,6 +5,33 @@ document.addEventListener('DOMContentLoaded', function () {
     bar.addEventListener('click', () => {
         navLink.classList.toggle('hide');
     });
+
+    const footer = document.createElement('footer');
+    footer.className = 'footer';
+    document.body.appendChild(footer);
+
+    const textContainer = document.createElement('div');
+    textContainer.className = 'text-container';
+    footer.appendChild(textContainer);
+
+    const text = document.createElement('p');
+    text.textContent = 'Basics Design - основы графического дизайна';
+    text.className = 'footer-text';
+    textContainer.appendChild(text);
+
+    const themeButton = document.createElement('button');
+    themeButton.className = 'theme-button';
+    themeButton.textContent = 'Изменить тему';
+    themeButton.addEventListener('click', () => {
+      document.documentElement.dataset.theme = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+      localStorage.setItem('theme', document.documentElement.dataset.theme);
+    });
+
+    footer.appendChild(themeButton);
+
+    if (localStorage.getItem('theme')) {
+      document.documentElement.dataset.theme = localStorage.getItem('theme');
+    }
 });
 
 function addFavicons() {

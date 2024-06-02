@@ -3,6 +3,9 @@
     --color-logo: #050574;
     --text-color: black;
     --hover-color: #80ccf0;
+    --background: #f0f0f0;
+    --hover-btn-color: #1f1f1f;
+    --hover-txt-color: #bfbfbf;
 }
 
 [data-theme="dark"] {
@@ -10,6 +13,9 @@
     --color-logo: #9999e6;
     --text-color: #bfbfbf;
     --hover-color: #338ccc;
+    --background: #1f1f1f;
+    --hover-btn-color: #f0f0f0;
+    --hover-txt-color: black;
 }
 
 body {
@@ -75,6 +81,44 @@ header a {
 
 .hide {
     display: none;
+}
+
+.footer {
+    background: var(--background);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-text {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.theme-button {
+    background-color: var(--background);
+    color: var(--text-color);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.theme-button:hover {
+    background-color: var(--hover-btn-color);
+    color: var(--hover-txt-color);
 }
 
 @media screen and (min-width: 725px) {
