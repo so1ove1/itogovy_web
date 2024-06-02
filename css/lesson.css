@@ -49,6 +49,8 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 40px 0;
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
 }
 
 .content nav {
@@ -118,7 +120,6 @@ body {
 }
 
 .txt ul {
-    list-style: none;
     padding: 0;
     margin: 0;
 }
