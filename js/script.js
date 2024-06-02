@@ -2,10 +2,8 @@ document.addEventListener('DOMContentLoaded', function () {
   addFavicons();
   const bar = document.querySelector('.bar');
   const navLink = document.querySelector('.nav__link');
-  document.addEventListener('click', (event) => {
-    if (!event.target.bar) {
-      navLink.classList.toggle('hide');
-    }
+  bar.addEventListener('click', () => {
+    navLink.classList.toggle('hide');
   });
 
   const footer = document.createElement('footer');
