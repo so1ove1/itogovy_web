@@ -1,11 +1,30 @@
+:root {
+    --background: #f0f0f0;
+    --block-background: #f0f0f0;
+    --text-color: #191919;
+    --img: invert(0);
+}
+
+[data-theme="dark"] {
+    --background: #1f1f1f;
+    --block-background: #1c1c21;
+    --text-color: #bfbfbf;
+    --img: invert(70%);
+}
+
+html, body {
+    height: 100%;
+}
+
+main {
+    min-height: 100vh;
+    background-color: var(--background);
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-body:not(header) {
-    background-color: #f0f0f0;
 }
 
 .header {
@@ -22,14 +41,13 @@ body:not(header) {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
     padding: 20px;
 }
 
 .block {
     width: 200px;
     height: 200px;
-    background-color: #fff;
+    background-color: var(--block-background);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 20px;
@@ -39,7 +57,7 @@ body:not(header) {
     align-items: center;
     font-size: 18px;
     font-weight: bold;
-    color: #333;
+    color: var(--text-color);
     text-decoration: none;
     transition: transform 0.3s ease;
 }
@@ -50,6 +68,7 @@ body:not(header) {
     margin: 10px;
     max-width: 100%;
     height: auto;
+    filter: var(--img);
 }
 
 .block:hover {

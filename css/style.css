@@ -1,3 +1,17 @@
+:root {
+    --background-nav: #fff;
+    --color-logo: #050574;
+    --text-color: black;
+    --hover-color: #80ccf0;
+}
+
+[data-theme="dark"] {
+    --background-nav: #1f1f1f;
+    --color-logo: #9999e6;
+    --text-color: #bfbfbf;
+    --hover-color: #338ccc;
+}
+
 body {
     font-family: sans-serif;
     width: 100%;
@@ -8,7 +22,7 @@ body {
 
 header a {
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
     font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -19,11 +33,12 @@ header a {
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
+    background-color: var(--background-nav);
 }
 
 .logo {
     font-size: 1.8rem;
-    color: rgb(5, 5, 116);
+    color: var(--color-logo);
     padding-left: 20px;
 }
 
@@ -55,7 +70,7 @@ header a {
 }
 
 .nav__link a:hover {
-    background-color: rgb(128, 204, 240);
+    background-color: var(--hover-color);
 }
 
 .hide {

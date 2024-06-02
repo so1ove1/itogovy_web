@@ -1,7 +1,20 @@
-body {
-    font-family: Arial, sans-serif;
+:root {
+    --background: #f0f0f0;
+    --block-background: #f0f0f0;
+    --text-color: #191919;
+}
+
+[data-theme="dark"] {
+    --background: #1f1f1f;
+    --block-background: #1c1c21;
+    --text-color: #bfbfbf;
+}
+
+body, html {
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
 }
 
 main {
@@ -9,6 +22,7 @@ main {
     flex-direction: column;
     align-items: center;
     padding: 2em;
+    background-color: var(--background);
 }
 
 .caption {
