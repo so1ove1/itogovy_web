@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
     themeButton.className = 'theme-button';
     themeButton.textContent = 'Изменить тему';
     themeButton.addEventListener('click', () => {
-      document.documentElement.dataset.theme = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
+      document.documentElement.dataset.theme = document.documentElement.dataset.theme === '' ? 'dark' : '';
       localStorage.setItem('theme', document.documentElement.dataset.theme);
     });
 
