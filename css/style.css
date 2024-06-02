@@ -6,6 +6,7 @@
     --background: #f0f0f0;
     --hover-btn-color: #1f1f1f;
     --hover-txt-color: #bfbfbf;
+    --menu-color: lightblue;
 }
 
 [data-theme="dark"] {
@@ -16,6 +17,7 @@
     --background: #1f1f1f;
     --hover-btn-color: #f0f0f0;
     --hover-txt-color: black;
+    --menu-color: #1f1f1f;
 }
 
 body {
@@ -66,7 +68,7 @@ header a {
     width: 94%;
     top: 5rem;
     left: 18px;
-    background-color: #1f1f1f;
+    background-color: var(--menu-color);
 }
 
 .nav__link a {
