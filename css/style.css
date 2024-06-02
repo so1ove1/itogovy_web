@@ -65,6 +65,7 @@ header a {
 
 .nav__link {
     position: absolute;
+    z-index: 1;
     width: 94%;
     top: 5rem;
     left: 18px;
